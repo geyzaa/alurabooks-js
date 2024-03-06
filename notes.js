@@ -1,4 +1,7 @@
-exemplo do uso do forEach substituindo o for 
+fetch (endpointDaAPI) //busca a API
+
+método forEach() executa uma função em cada elemento de um array
+//exemplo do uso do forEach substituindo o for 
 
 let livros = ['Js','Python','Go']
 
@@ -13,6 +16,8 @@ livros.forEach(livro => {
 })
 
 função map 
+/*o método map invoca uma função callback passada por argumento
+para cada elemento do array e devolve um novo array como resultado*/
 ex: 
 const array1 = [1, 4, 9, 16];
 
@@ -21,3 +26,17 @@ const map1 = array1.map(x => x * 2);
 
 console.log(map1);
 //expected output : array [2, 8, 18, 32]
+
+função filter
+/*cria um novo array com todos os elementos que 
+passaram no este implementado pela função fornecida*/
+
+const idades = [10, 22, 42, 16, 50]
+
+const podeDirigir = idades.filter(idade => {
+    return idade >= 18
+})
+
+console.log (podeDirigir) //22,42,50
+console.log(idades) //10, 22, 42, 16, 50 n muda o array, 
+//cria um novo array com a resposta
