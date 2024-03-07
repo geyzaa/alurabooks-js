@@ -40,3 +40,22 @@ const podeDirigir = idades.filter(idade => {
 console.log (podeDirigir) //22,42,50
 console.log(idades) //10, 22, 42, 16, 50 n muda o array, 
 //cria um novo array com a resposta
+
+o método sort() ordena os elementos do próprio array e retorna o array. 
+A ordenação não é necessariamente estável. A ordenação padrão é de acordo 
+com a pontuação de código unicode
+
+ex. [1,5,10,6] retorna 1, 10, 5, 6
+
+ex do uso do sort() para ordenar. 
+
+let precos = [29,11,1,101,110]
+//.            1,11,29,101,110
+
+let precosOrdenados = precos.sort((a,b) => a - b ) 
+console.log(precosOrdenados)
+
+obs: b - a = do maior para o menor 
+a - b = do menor para o maior
+parâmetro a e b são a comparação dos arrays
+elemento undefined é classificado como último
