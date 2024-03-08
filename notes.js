@@ -2,7 +2,7 @@ fetch (endpointDaAPI) //busca a API
 
 
 
-método forEach() executa uma função em cada elemento de um array
+//método forEach() executa uma função em cada elemento de um array
 //exemplo do uso do forEach substituindo o for 
 
 let livros = ['Js','Python','Go']
@@ -49,9 +49,9 @@ console.log(idades) //10, 22, 42, 16, 50 n muda o array,
 
 
 
-o método sort() ordena os elementos do próprio array e retorna o array. 
-A ordenação não é necessariamente estável. A ordenação padrão é de acordo 
-com a pontuação de código unicode
+//o método sort() ordena os elementos do próprio array e retorna o array. 
+//A ordenação não é necessariamente estável. A ordenação padrão é de acordo 
+//com a pontuação de código unicode
 
 ex. [1,5,10,6] retorna 1, 10, 5, 6
 
@@ -70,10 +70,10 @@ elemento undefined é classificado como último
 
 
 
-método reduce() executa uma função reducer (fornecida por você) 
-para cada elemento do array, resultando num único valor de retorno
+//método reduce() executa uma função reducer (fornecida por você) 
+//para cada elemento do array, resultando num único valor de retorno
 
-imagem map filter e reducer no google explica claramente o que cada função faz
+//imagem map filter e reducer no google explica claramente o que cada função faz
 
 const precos = [10, 20, 70]
 
@@ -81,5 +81,5 @@ const precoTotal = precos.reduce((acc, atual) => acc + atual)
 
 console.log(precoTotal)
 
-para devolver o maior valor ex:
+//para devolver o maior valor ex:
 const precoTotal = precos.reduce((acc, atual) => acc > atual? acc : atual)
